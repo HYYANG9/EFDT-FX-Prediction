@@ -1,0 +1,5 @@
+# EFDT-FX-Prediction
+This is a model for predicting the movement of foreign exchange(FX) rate in the future. We want to predict the movement of the price of USDJPY currency pair in the next minute, five minutes, hour.   
+Predicting the movement of FX rate faces the **concept drift** problem. The prices change over time in unforeseen ways. So we need a model that can deal with concept drift and adjust decision-making boundaries at any time. [**Extremely Fast Decision Tree**](https://arxiv.org/pdf/1802.08780.pdf) 
+is an online machine learning algorithm that outputs a decision tree. It allows an existing tree to be updated using only new data instances, without having to re-process past instances, which may be useful in situations 
+where the entire dataset is not available when the tree is updated or the original data set is too large to process or the characteristics of the data change over time (concept drift). As new data instances come in, EFDT can dynamically modify existing model, re-evaluate previous split or kill subtree. 
